@@ -15,9 +15,9 @@ const Insert=()=>{
        
         const formData = new FormData();
         formData.append("file", selectedFile);
-        formData.append('upload_preset', 'wbtcvi6u');
-        formData.append('cloud_name', 'dyfr12jd5');
-        const response = await axios.post('https://api.cloudinary.com/v1_1/dyfr12jd5/image/upload', formData);
+        formData.append('upload_preset', 's7oqfqa0');
+        formData.append('cloud_name', 'abhaydixitdev');
+        const response = await axios.post('https://api.cloudinary.com/v1_1/abhaydixitdev/image/upload', formData);
         console.log(response.data.url);
         const myimg=response.data.url;
         let api="http://localhost:8000/mycloudenary/datasave";
